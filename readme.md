@@ -39,7 +39,7 @@
 1. Clone repository ini:
 
 ```bash
-git clone https://github.com/<USERNAME>/projekStarwars.git
+git clone https://github.com/itszarmaull/projekStarwars.git
 
 ```
 
