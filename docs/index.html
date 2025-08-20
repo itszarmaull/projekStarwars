@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars Galaxy Explorer</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Orbitron", sans-serif;
+        background-color: #0b0c17;
+      }
+      .fade-in {
+        animation: fadeIn 0.7s ease forwards;
+        opacity: 0;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .btn-hover:hover {
+        transform: scale(1.05);
+        background-color: #facc15;
+        color: #1f2937;
+        transition: 0.3s;
+      }
+    </style>
+  </head>
+  <body
+    class="text-white min-h-screen flex flex-col items-center justify-between"
+  >
+    <header class="text-center mt-10 fade-in">
+      <h1
+        class="text-5xl md:text-6xl font-bold text-yellow-400 drop-shadow-lg mb-4"
+      >
+        ⭐ Star Wars Galaxy Explorer ⭐
+      </h1>
+      <p class="text-gray-300 text-lg md:text-xl">
+        Jelajahi Planet & Karakter Legendaris dari Universe Star Wars
+      </p>
+    </header>
+
+    <main class="max-w-4xl mx-auto mt-12 px-6 fade-in">
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-yellow-400 mb-4">Tentang Web Ini</h2>
+        <p class="text-gray-300 text-lg leading-relaxed">
+          Star Wars Galaxy Explorer adalah aplikasi web interaktif untuk
+          menjelajahi berbagai planet dan karakter dari universe Star Wars. Data
+          diambil dari API publik Star Wars (SWAPI) dan ditampilkan dengan
+          tampilan modern dan animasi.
+        </p>
+      </section>
+
+      <section class="mb-12">
+        <h2 class="text-3xl font-bold text-yellow-400 mb-4">
+          Teknologi yang Digunakan
+        </h2>
+        <ul class="list-disc list-inside text-gray-300 text-lg space-y-2">
+          <li>HTML5 & CSS3</li>
+          <li>JavaScript (ES6+) & Axios</li>
+          <li>Tailwind CSS untuk styling modern</li>
+          <li>Three.js untuk animasi 3D latar belakang galaksi</li>
+          <li>SWAPI API untuk data Planet & Karakter</li>
+        </ul>
+      </section>
+
+      <section class="flex flex-col sm:flex-row justify-center gap-6 mb-16">
+        <a
+          href="planet.html"
+          class="bg-yellow-500 text-gray-900 px-8 py-3 rounded-lg font-bold text-lg text-center btn-hover"
+          >Jelajahi Planet</a
+        >
+        <a
+          href="people.html"
+          class="bg-yellow-500 text-gray-900 px-8 py-3 rounded-lg font-bold text-lg text-center btn-hover"
+          >Jelajahi Karakter</a
+        >
+      </section>
+    </main>
+
+    <footer
+      class="w-full py-6 text-center text-gray-400 border-t border-gray-700"
+    >
+      <a href="https://www.instagram.com/zarmaull_" target="_blank">
+        © 2025 by Fazar Maulana</a
+      >
+    </footer>
+  </body>
+</html>

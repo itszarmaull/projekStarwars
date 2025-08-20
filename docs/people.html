@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Star Wars Galaxy - People</title>
+    <link rel="stylesheet" href="css/output.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      body {
+        font-family: "Orbitron", sans-serif;
+        background-color: #0b0c17;
+      }
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .fade-in {
+        animation: fadeIn 0.7s ease forwards;
+      }
+      .card-hover:hover {
+        transform: translateY(-5px) scale(1.03);
+        box-shadow: 0 10px 20px rgba(255, 215, 0, 0.4);
+      }
+    </style>
+  </head>
+  <body class="text-white relative overflow-x-hidden">
+    <canvas id="bgCanvas" class="fixed inset-0 w-full h-full -z-10"></canvas>
+
+    <header class="text-center mt-6 mb-10">
+      <h1 class="text-4xl md:text-5xl font-bold text-yellow-400 drop-shadow-lg">
+        ⭐ Star Wars Galaxy ⭐
+      </h1>
+      <p class="text-gray-300 mt-2 text-lg">Jelajahi Karakter Legendaris</p>
+    </header>
+
+    <div
+      class="flex flex-col sm:flex-row w-full max-w-md mb-6 space-y-4 sm:space-y-0 sm:space-x-4 mx-auto"
+    >
+      <input
+        id="charInput"
+        type="text"
+        placeholder="Masukan nama karakter..."
+        class="w-full p-3 rounded-lg bg-gray-800 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+      />
+      <button
+        id="searchCharBtn"
+        class="bg-yellow-400 text-gray-900 font-bold px-6 py-3 rounded-lg hover:bg-yellow-500 transition"
+      >
+        Cari
+      </button>
+    </div>
+
+    <div
+      id="peopleCards"
+      class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 p-6 max-w-6xl mx-auto"
+    ></div>
+
+    <footer class="text-center text-gray-400 mt-10 mb-6">
+      <a href="https://www.instagram.com/zarmaull_"> © Fazar Maulana 2025</a>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="js/people.js"></script>
+  </body>
+</html>

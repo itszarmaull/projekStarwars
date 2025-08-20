@@ -1,0 +1,1 @@
+printf "node_modules/\n.DS_Store\n.env\n*.log\ndist/\nbuild/\n" > .gitignore
